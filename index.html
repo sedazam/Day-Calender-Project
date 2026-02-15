@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script type="module" src="common.mjs"></script>
-        <script type="module" src="web.mjs"></script>
-    </head>
-    <body>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days Calendar</title>
+
+    <script type="module" src="./web.mjs"></script>
+  </head>
+
+  <body>
+    <h1 id="title">Calendar</h1>
+
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+
+    <br /><br />
+
+    <label for="month">Month</label>
+    <select id="month"></select>
+
+    <label for="year">Year</label>
+    <select id="year"></select>
+
+    <button id="go">Go</button>
+
+    <br /><br />
+
+    <table aria-label="Calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+    </table>
+  </body>
 </html>
