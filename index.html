@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Days Calendar</title>
-
+    
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+      
+      th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        width: 14.28%;
+        height: 100px;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      
+      td {
+        background-color: white;
+      }
+      
+      .today {
+        background-color: #ffffcc;
+      }
+    </style>
+    
     <script type="module" src="./web.mjs"></script>
   </head>
 
